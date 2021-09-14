@@ -30,13 +30,11 @@ const BlogPost = ( { data, pageContext } ) => {
        
     
   const options = {
-      renderMark: {
-          [MARKS.BOLD]: text => <Bold> {text}</Bold>
-      },
       renderNode: {
-          [BLOCKS.PARAGRAPH]: (node, children) => <Text> {children}</Text>
-    }, 
+        [BLOCKS.PARAGRAPH]: (node, children) => <Text> {children}</Text>
+      }, 
       renderMark: {
+        [MARKS.BOLD]: (text) => <Bold> {text}</Bold>,
         [MARKS.CODE]: (text) => {
           return (
             <SyntaxHighlighter
