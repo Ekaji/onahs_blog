@@ -25,7 +25,7 @@ export const query = graphql`
 
 const BlogPost = ( { data, pageContext } ) => {
 
-  const Bold = ({children}) => <span className="bold"> { children }</span>
+  const Bold = ({children}) => <span className="font-bold font-sans text-gray-900 font-medium"> { children }</span>
   const Text = ({children}) => <p className="py-6"> { children }</p>
        
     

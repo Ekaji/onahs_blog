@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 @layer utilities{
     .card-shadow{
@@ -12,6 +13,6 @@ body{
     overflow-x: hidden;
 }
 
-p > pre {
-    margin: 0px;
+.anton{
+    font-family: 'Anton', sans-serif;
 }
