@@ -44,13 +44,10 @@ const LandingPage = () => {
         <div className="w-3/4  m-auto anton">
             {/* <VideoComponent /> */}
             <div className= ""> {(Object.values(greeting))}</div>
-            <span>{'\u263A'}</span>
-            <div className="" > 
-                <div className=" text-7xl"> i'm 
-                    <span className="name"> ekaji onah, < Emoji symbol = '👋' label = 'waving hand' /> </span> 
-                    CREATIVE WEB DEVELOPER BASED IN ABUJA, NIGERIA. 
-                </div>
-            </div>    
+            <div className="text-7xl uppercase"> i'm 
+                <span className=""> ekaji onah, < Emoji symbol = '👋' label='waving hand'/> </span> 
+                CREATIVE WEB DEVELOPER BASED IN ABUJA, NIGERIA. 
+            </div> 
         </div>
     )
 }
