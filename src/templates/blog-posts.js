@@ -25,7 +25,7 @@ export const query = graphql`
 
 const BlogPost = ( { data, pageContext } ) => {
 
-  const Bold = ({children}) => <span className="font-bold font-sans text-gray-900 font-medium"> { children }</span>
+  const Bold = ({children}) => <div className="font-bold font-sans text-gray-900 font-medium uppercase"> { children }</div>
   const Text = ({children}) => <p className="py-6"> { children }</p>
        
     
@@ -61,8 +61,6 @@ const BlogPost = ( { data, pageContext } ) => {
                       <p className="text-sm md:text-base font-normal text-gray-600">{data.contentfulBlogPost.publishedDate}</p>
                   </div>
                   <div className="py-6 ">{renderRichText(data.contentfulBlogPost.body, options)}</div>
-
-
               </div>
                 {/* KEEP VERRY IMPORTANT */}
               {/* <div className="text-base md:text-sm text-gray-500 px-4 py-6">
@@ -94,7 +92,6 @@ const BlogPost = ( { data, pageContext } ) => {
                               <Link className="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline" to={ `/blog/${next.slug.toLowerCase().trimStart().replace(/\s/g, '-')}/`} rel="next">
                                   {next.slug}
                               </Link>
-            
                           )}
                       </>
                   </div>

@@ -1,18 +1,21 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {
-      blur: {
-        d: '200px'
-      },
-      zIndex: {
-        '200': -200
-      }
+    purge: [],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+        extend: {
+            fontSize: {
+                'text-7xl': '3.85rem'
+            },
+            blur: {
+                d: '200px'
+            },
+            zIndex: {
+                '200': -200
+            }
+        }
     },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    variants: {
+        extend: {}
+    },
+    plugins: []
 }

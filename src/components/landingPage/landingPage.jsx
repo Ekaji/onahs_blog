@@ -41,13 +41,16 @@ const LandingPage = () => {
 
 
     return(
-        <div className="w-3/4  m-auto anton">
-            {/* <VideoComponent /> */}
-            <div className= ""> {(Object.values(greeting))}</div>
-            <div className="text-7xl uppercase"> i'm 
-                <span className=""> ekaji onah, < Emoji symbol = '👋' label='waving hand'/> </span> 
-                CREATIVE WEB DEVELOPER BASED IN ABUJA, NIGERIA. 
-            </div> 
+        <div className="flex flex-col h-screen justify-center items-center ">
+            <div className="w-3/4 anton">
+                {/* <VideoComponent /> */}
+                <div className="text-3xl"> {(Object.values(greeting))}</div>
+                <div className="text-6xl uppercase"> i'm 
+                    <span className=""> ekaji onah,  
+                        {/* <Emoji symbol = '👋' label='waving hand'/>  */}
+                    </span> CREATIVE WEB DEVELOPER BASED IN ABUJA, NIGERIA. 
+                </div> 
+            </div>
         </div>
     )
 }
