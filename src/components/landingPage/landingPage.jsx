@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Emoji from '../emoji'
+import Menu from '../menu/menu'
 // import VideoComponent from "../video_component/video_component";
 
 const LandingPage = () => {
@@ -41,7 +42,8 @@ const LandingPage = () => {
 
 
     return(
-        <div className="flex flex-col h-screen justify-center items-center ">
+        <div className="flex flex-col h-5/6 justify-center items-center">
+            {/* <Menu /> */}
             <div className="w-3/4 anton">
                 {/* <VideoComponent /> */}
                 <div className="text-3xl"> {(Object.values(greeting))}</div>
