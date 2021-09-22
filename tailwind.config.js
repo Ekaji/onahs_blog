@@ -8,6 +8,10 @@ module.exports = {
             },
             zIndex: {
                 '200': -200
+            },
+            height: {
+                '70vh': '70vh',
+                // '90vh': '90vh'
             }
         }
     },

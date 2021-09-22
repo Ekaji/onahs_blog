@@ -1,12 +1,12 @@
 import React from "react"
 import '../styles/global.css'
 
-const LayOut = ({children}) => {
+const Layout = ({children}) => {
     return(
-        <div>
-            { children }
+        <div className="w-full flex flex-col justify-center align-center">
+                { children }
         </div>
     )
 }
 
-export default LayOut;
+export default Layout;

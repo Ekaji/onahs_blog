@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import Emoji from '../emoji'
-import Menu from '../menu/menu'
+// import Emoji from '../emoji'
+// import Menu from '../menu/menu'
 // import VideoComponent from "../video_component/video_component";
 
 const LandingPage = () => {
@@ -42,16 +42,15 @@ const LandingPage = () => {
 
 
     return(
-        <div className="flex flex-col h-5/6 justify-center items-center">
-            {/* <Menu /> */}
-            <div className="w-3/4 anton">
-                {/* <VideoComponent /> */}
-                <div className="text-3xl"> {(Object.values(greeting))}</div>
-                <div className="text-6xl uppercase"> i'm 
-                    <span className=""> ekaji onah,  
-                        {/* <Emoji symbol = '👋' label='waving hand'/>  */}
-                    </span> CREATIVE WEB DEVELOPER BASED IN ABUJA, NIGERIA. 
-                </div> 
+        <div className="flex justify-center h-90vh mb-24 md:h-70vh md:my-auto">
+            <div className="flex flex-col items-center md:my-auto">
+                <div className="w-3/4 anton md:h-5/6">
+                    <div className="text-3xl"> {(Object.values(greeting))}</div>
+                    <div className="text-6xl uppercase"> i'm 
+                        <span className=""> ekaji onah,
+                        </span> CREATIVE WEB DEVELOPER BASED IN ABUJA, NIGERIA. 
+                    </div> 
+                </div>
             </div>
         </div>
     )
