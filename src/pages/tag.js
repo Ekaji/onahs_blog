@@ -42,9 +42,8 @@ const UniqueTags = ({data, tagClass}) => {
     } </div>)
 }
 
-
-
-    return (<Layout>
+  return (
+    <Layout>
         <UniqueTags data={data}/>
     </Layout>)
 }
