@@ -42,8 +42,8 @@ const LandingPage = () => {
 
 
     return(
-        <div className="flex justify-center h-90vh mb-24 md:h-70vh md:my-auto">
-            <div className="flex flex-col items-center md:my-auto">
+        <div className="flex justify-center h-90vh border-t mb-24 md:h-70vh md:my-auto">
+            <div className="flex flex-col items-center mt-8 md:my-auto">
                 <div className="w-3/4 anton md:h-5/6">
                     <div className="text-3xl"> {(Object.values(greeting))}</div>
                     <div className="text-6xl uppercase"> i'm 
