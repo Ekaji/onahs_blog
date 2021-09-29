@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react"
-// import Emoji from '../emoji'
-// import Menu from '../menu/menu'
-// import VideoComponent from "../video_component/video_component";
 
 const LandingPage = () => {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageHook } from '../../hooks/imageHook/imageHook'
+import { IsMobileOrDesktop } from '../../hooks/deviceType/IsMobileOrDesktop'
 import anyleaseDesktop from '../../images/desktop/anyleaseDesktop.png'
 import anyleaseMobile from '../../images/mobile/anyleaseMobile.png'
 
@@ -11,7 +11,7 @@ const Projects = () => {
             <h2 className="w-3/4 mx-auto flex flex-col uppercase anton text-4xl">projects</h2>
             {/* <h2 className="w-3/4 flex flex-col uppercase text-4xl">projects</h2> */}
               <section className="text-gray-600 body-font m-6">
-                  <img src={ImageHook(anyleaseDesktop, anyleaseMobile)} alt="anylease" />
+                  <img src={IsMobileOrDesktop(anyleaseDesktop, anyleaseMobile)} alt="anylease" />
               </section>
         </div>
         </div>

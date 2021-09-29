@@ -63,7 +63,7 @@ const responsive = {
     `)
     return (
       <div className="container px-5 py-24 mx-auto max-w-7x1 -m-4">
-        <h2 class="w-3/4 mx-auto flex flex-col uppercase anton text-4xl">latest articles</h2>
+        <h2 className="w-3/4 mx-auto flex flex-col uppercase anton text-4xl">latest articles</h2>
         <Carousel responsive={responsive}>
             { data.allContentfulBlogPost.edges.map((edge, i) => (
                 <Link className=" xl:w-1/3 md:w-1/2 m-8" key={edge.node.id} to={`/blog/${edge.node.slug.toLowerCase().trimStart().replace(/\s/g, '-')}/`}>

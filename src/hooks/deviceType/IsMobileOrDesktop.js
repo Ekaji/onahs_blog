@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react"
 
-export const ImageHook = (desktop, mobile) => {
+export const IsMobileOrDesktop = (desktop, mobile) => {
         const [deviceType, setDeviceType] = useState()
         const isBrowser = typeof window !== "undefined"
 
