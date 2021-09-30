@@ -11,8 +11,8 @@ module.exports = {
                 '-20': '-20'
             },
             height: {
-                '70vh': '70vh',
-                // '90vh': '90vh'
+                // '70vh': '70vh',
+                '90vh': '90vh'
             },
             spacing: {
                 '110': '110%'

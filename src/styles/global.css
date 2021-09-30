@@ -16,3 +16,7 @@ body{
 .anton{
     font-family: 'Anton', sans-serif;
 }
+
+.nav-filter{
+    backdrop-filter : blur(20px)
+}
