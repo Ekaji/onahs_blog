@@ -1,19 +1,13 @@
-import React, { useState, useEffect } from "react"
-import '../../styles/menu_styles_animations.css'
+import React, { useState } from "react"
 import { IsMobileOrDesktop } from "../../hooks/deviceType/IsMobileOrDesktop"
 
 const Menu = () => {
     const [menuState, setMenuState] = useState(true)
-    const handleClick = () => {
-        setMenuState(!menuState)
-    }
-
-
+    const handleClick = () => setMenuState(!menuState)
     const deviceType = IsMobileOrDesktop('desktop', 'mobile')
 
-
     return(
-        <div className={`fixed right-0 w-screen ${deviceType === 'mobile' ? '' : 'nav-filter'}`}>
+        <div className={`fixed right-0 w-screen anton ${deviceType === 'mobile' ? '' : 'nav-filter'}`}>
             <div className="flex justify-center items-center flex-col my-5 ">
                 <div className="w-3/4 flex flex-col items-end md:flex-row md:justify-end">
                     <div className="z-20 w-9 h-7 overflow-hidden md:hidden" >
@@ -27,25 +21,25 @@ const Menu = () => {
                         </ul>
                     </div>
                     {deviceType === 'mobile' ? 
-                    <div className={`bg-clip-padding bg-opacity-60 nav-filter transform transition-all ease-in-out duration-300 absolute right-0 w-screen ${menuState ? '-translate-y-110' : '' } md:translate-y-110`} >
-                        <div className='bg-clip-padding bg-opacity-60 nav-filter mx-auto pt-10 h-screen uppercase flex flex-col space-y-12 md:space-x-24 '>
-                            <button className='uppercase'><a href="#">home</a> </button>
-                            <button className='uppercase'><a href="#">about</a> </button>
-                            <button className='uppercase'><a href="#">projects</a> </button>
+                    <div className={` bg-clip-padding bg-opacity-60 nav-filter transform transition-all ease-in-out duration-300 absolute right-0 w-screen ${menuState ? '-translate-y-110' : '' } md:translate-y-110`} >
+                        <div className='tracking-widest bg-clip-padding bg-opacity-60 nav-filter mx-auto pt-10 h-screen uppercase flex flex-col space-y-12 md:space-x-24 '>
+                            <button ><a className='tracking-widest'  href="#">home</a> </button>
+                            <button ><a className='tracking-widest' href="#">about</a> </button>
+                            <button ><a className='tracking-widest'  href="#">projects</a> </button>
                             <span className='mx-auto space-y-4 md:space-x-12'>
-                                <button className='block border-gray-900 border rounded-full w-24 py-2 hover:bg-gray-900 hover:text-white'><a href="#">blog</a> </button>
-                                <button className='block bg-gray-900 rounded-full w-24 py-2 text-white hover:bg-white hover:text-gray-900 border hover:border-gray-900'><a href="#">contact</a> </button>
+                                <button className='tracking-widest block border-gray-900 border rounded-full w-40 py-2 hover:bg-gray-900 hover:text-white'><a href="#">blog</a> </button>
+                                <button className='tracking-widest block bg-gray-900 rounded-full w-40 py-2 text-white hover:bg-white hover:text-gray-900 border hover:border-gray-900'><a href="#">contact</a> </button>
                             </span>
                         </div>
                     </div>
                     :
-                    <div className='md:flex md:space-x-24 md:uppercase'>
-                        <button> <a href="#">home</a> </button>
-                        <button> <a href="#">about</a> </button>
-                        <button><a href="#">projects</a> </button>
+                    <div className='tracking-widest md:flex md:space-x-24 md:uppercase'>
+                        <button> <a className='tracking-widest' href="#">home</a> </button>
+                        <button> <a className='tracking-widest' href="#">about</a> </button>
+                        <button><a className='tracking-widest' href="#">projects</a> </button>
                         <span className='space-x-12'>
-                            <button className='border-gray-900 border rounded-full w-24 py-2 hover:bg-gray-900 hover:text-white'><a href="#">blog</a> </button>
-                            <button className='bg-gray-900 rounded-full w-24 py-2 text-white hover:bg-white hover:text-gray-900 border hover:border-gray-900'><a href="#">contact</a> </button>
+                            <button className='tracking-widest border-gray-900 border rounded-full w-24 py-2 hover:bg-gray-900 hover:text-white'><a href="#">blog</a> </button>
+                            <button className='tracking-widest bg-gray-900 rounded-full w-24 py-2 text-white hover:bg-white hover:text-gray-900 border hover:border-gray-900'><a href="#">contact</a> </button>
                         </span>
                     </div> 
                 }            
