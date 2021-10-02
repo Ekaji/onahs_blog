@@ -7,7 +7,7 @@ const Menu = () => {
     const deviceType = IsMobileOrDesktop('desktop', 'mobile')
 
     return(
-        <div className={`fixed right-0 w-screen anton ${deviceType === 'mobile' ? '' : 'nav-filter'}`}>
+        <div className={`fixed right-0 w-screen anton ${menuState ? 'nav-filter' : ''}`}>
             <div className="flex justify-center items-center flex-col my-5 ">
                 <div className="w-3/4 flex flex-col items-end md:flex-row md:justify-end">
                     <div className="z-20 w-9 h-7 overflow-hidden md:hidden" >
