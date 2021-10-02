@@ -7,7 +7,7 @@ const Menu = () => {
     const deviceType = IsMobileOrDesktop('desktop', 'mobile')
 
     return(
-        <div className={`fixed right-0 w-screen anton backdrop-filter ${menuState ? 'transform transition-all ease-in duration-200 backdrop-blur-3xl' : '' } md:backdrop-blur-2xl z-20`}>
+        <div className={`fixed right-0 w-screen anton backdrop-filter ${menuState ? 'transform transition-all ease-in duration-200 backdrop-blur-xl' : '' } md:backdrop-blur-xl z-20`}>
             <div className="flex justify-center items-center flex-col my-5  ">
                 <div className="w-3/4 flex flex-col items-end md:flex-row md:justify-end">
                     <div className="z-20 w-9 h-7 overflow-hidden md:hidden" >
@@ -22,9 +22,8 @@ const Menu = () => {
                     </div>
                     {deviceType === 'mobile' ? 
                     //mobile
-                    <div className={` bg-clip-padding bg-opacity-60 nav-filter transform transition-all ease-in-out duration-300 absolute right-0 w-screen 
-                                    ${menuState ? '-translate-y-110' : '' } md:translate-y-110`} >
-                        <div className='tracking-widest bg-clip-padding bg-opacity-60 nav-filter mx-auto pt-10 h-screen uppercase flex flex-col space-y-12 md:space-x-24 '>
+                    <div className={`bg-clip-padding backdrop-filter backdrop-blur-xl transform transition-all ease-in-out duration-300 absolute right-0 w-screen ${menuState ? '-translate-y-110' : '' } md:translate-y-110`} >
+                        <div className='tracking-widest mx-auto pt-10 h-screen uppercase flex flex-col space-y-12 md:space-x-24 '>
                             <button ><a className='tracking-widest'  href="#">home</a> </button>
                             <button ><a className='tracking-widest' href="#">about</a> </button>
                             <button ><a className='tracking-widest'  href="#">projects</a> </button>
