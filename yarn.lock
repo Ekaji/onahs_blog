@@ -1677,6 +1677,11 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
+"@shimyshack/tailwindcss-pseudo-element-plugin@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@shimyshack/tailwindcss-pseudo-element-plugin/-/tailwindcss-pseudo-element-plugin-1.0.4.tgz#e0cd827bfb4d5f38e00ae012f46b9d0837065b89"
+  integrity sha512-+u1tMAbDwiGMtKB3fslIhc8EAAlpapW8ZCX8Wdx74htUVNWfMM3toRLUFTPmTuuERMC7chSLd6c25Gs3yPmpjw==
+
 "@sideway/address@^4.1.0":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.2.tgz#811b84333a335739d3969cfc434736268170cad1"
