@@ -8,21 +8,28 @@
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
-    /* .snap {
-    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+    .scrollBarContainer::-webkit-scrollbar {
+        position: absolute;
+        background-color: transparent;
+        width: 6px;
+        /* transition: 2s opacity ease;
+        -ms-transition: 2s opacity ease;
+        opacity: 0; */
     }
 
-    .snap-y {
-      --scroll-snap-direction: y;
+    .scrollBarContainer.animate::-webkit-scrollbar {
+        /* background-color: rgb(153, 153, 153); */
+        transition: 2s opacity ease;
+        -ms-transition: 2s opacity ease;
+        opacity: 0;
     }
 
-    .snap-mandatory {
-      --scroll-snap-constraint: mandatory;
+    .scrollBarContainer.animate::-webkit-scrollbar-thumb {
+      background-color: rgb(153, 153, 153);    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: rgb(153, 153, 153);  /* creates padding around scroll thumb */
     }
-
-    .snap-start {
-      scroll-snap-align: start;
-    } */
+   
 }
 
 body{

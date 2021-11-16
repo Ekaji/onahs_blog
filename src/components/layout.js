@@ -9,11 +9,11 @@ const Layout = ({children}) => {
     return(
         <>
         <Menu />
-        <Locomotive>
+        {/* <Locomotive> */}
             <div className="w-full flex flex-col justify-center align-center" >
             { children }
             </div>
-        </Locomotive>
+        {/* </Locomotive> */}
         </>
     )
 }

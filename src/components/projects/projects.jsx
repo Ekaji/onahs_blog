@@ -6,16 +6,16 @@ import anyleaseMobile from '../../images/mobile/anyleaseMobile.png'
 
 const Projects = () => {
     return(
-        <div className=" anton flex flex-col items-center" id="projects">
-            <div className="anton container px-5 pt-24 pb-10 mx-auto max-w-7x1 -m-4 ">
+        <div className=" h-screen anton flex flex-col items-center" id="projects">
+            <div className="h-full overflow-hidden relative  anton container px-5 pt-24 pb-10 mx-auto max-w-7x1 -m-4 ">
                 <div data-scroll data-scroll-sticky data-scroll-target="#projects">
                     <h2 className="w-3/4 mx-auto flex flex-col uppercase anton text-4xl" data-scroll >projects</h2>
                 </div>
-                <main className="">
-                    <section className="text-gray-600 body-font m-6  " >
+                <main className="h-full absolute insert-y-0 overflow-y-scroll scrollBarContainer animate">
+                    <section className="h-full  text-gray-600 body-font m-6  " >
                         <img src={IsMobileOrDesktop(anyleaseDesktop, anyleaseMobile)} alt="anylease" />
                     </section>
-                    <section class="w-full h-screen bg-red-200  ">
+                    <section class="w-2/3 h-screen bg-red-200  ">
                         Section 1
                     </section>
                     <section class="w-full h-screen bg-blue-200  ">
