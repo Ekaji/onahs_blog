@@ -10,7 +10,6 @@ const Home = () => {
       <Hero />
       <Projects />
       <LatestPosts />
-      <LatestPosts />
     </Layout>
   )
 }

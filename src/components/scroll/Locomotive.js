@@ -6,7 +6,8 @@ const Locomotive = ({children}) => {
     const scrollRef = React.createRef()
 
     useEffect(() => {
-        const locomotive_scroll = new locomotiveScroll({
+        setTimeout(() => {
+const locomotive_scroll = new locomotiveScroll({
             el: scrollRef.current,
             smooth: true,
         })
@@ -17,6 +18,8 @@ const Locomotive = ({children}) => {
     return () => {
       if (locomotive_scroll) locomotive_scroll.destroy();
     };
+        }, 200)
+        
 
     })
     return (
