@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { IsMobileOrDesktop } from "../../hooks/deviceType/IsMobileOrDesktop"
 
 const Menu = () => {
     const [menuState, setMenuState] = useState(true)
     const handleClick = () => setMenuState(!menuState)
     const deviceType = IsMobileOrDesktop('desktop', 'mobile')
-
 
     return(
         <>

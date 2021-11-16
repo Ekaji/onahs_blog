@@ -62,7 +62,7 @@ const responsive = {
       }
     `)
     return (
-      <div className="container px-5 py-24 mx-auto max-w-7x1 -m-4">
+      <section className="container px-5 py-24 mx-auto max-w-7x1 -m-4 " >
         <h2 className="w-3/4 mx-auto flex flex-col uppercase anton text-4xl">latest articles</h2>
         <Carousel responsive={responsive}>
             { data.allContentfulBlogPost.edges.map((edge, i) => (
@@ -75,7 +75,7 @@ const responsive = {
                 </Link>
             )) }
           </Carousel>
-      </div>
+      </section>
     )
 }
 

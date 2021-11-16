@@ -4,12 +4,12 @@ import Hero from '../components/hero/hero'
 import Projects from '../components/projects/projects'
 import LatestPosts from "../components/latestPosts/latestPosts"
 
-
 const Home = () => {
   return(
     <Layout>
       <Hero />
       <Projects />
+      <LatestPosts />
       <LatestPosts />
     </Layout>
   )
