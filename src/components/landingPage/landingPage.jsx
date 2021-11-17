@@ -39,7 +39,7 @@ const LandingPage = () => {
 
 
     return(
-        <div className="flex justify-center pt-10 h-90vh mb-24 md:h-90vh  md:my-auto w-full h-screen">
+        <div className="flex justify-center pt-10 h-90vh mb-24 md:h-screen md:my-auto w-full" id='home' data-scroll-section>
             <div className="flex flex-col items-center mt-8 md:my-auto">
                 <div className="w-3/4 anton md:h-5/6">
                     <div className="text-3xl"> {(Object.values(greeting))}</div>

@@ -10,6 +10,12 @@ const Locomotive = ({children}) => {
 const locomotive_scroll = new locomotiveScroll({
             el: scrollRef.current,
             smooth: true,
+             smartphone: {
+                smooth: true,
+            },
+            tablet: {
+                smooth: true
+            }
         })
         locomotive_scroll.update()
 

@@ -2,21 +2,31 @@ import React from 'react';
 import { IsMobileOrDesktop } from '../../hooks/deviceType/IsMobileOrDesktop'
 import anyleaseDesktop from '../../images/desktop/anyleaseDesktop.png'
 import anyleaseMobile from '../../images/mobile/anyleaseMobile.png'
+import landerdotDesktop from '../../images/desktop/landerdotDesktop.png'
+import landerdotMobile from '../../images/mobile/landerdotMobile.png'
 
 
 const Projects = () => {
     return(
-        <div className=" h-screen anton flex flex-col items-center" id="projects">
-            <div className="h-full overflow-hidden relative  anton container px-5 pt-24 pb-10 mx-auto max-w-7x1 -m-4 ">
-                <div data-scroll data-scroll-sticky data-scroll-target="#projects">
-                    <h2 className="w-3/4 mx-auto flex flex-col uppercase anton text-4xl" data-scroll >projects</h2>
-                </div>
-                <main className="h-full absolute insert-y-0 overflow-y-scroll scrollBarContainer animate">
-                    <section className="h-full  text-gray-600 body-font m-6  " >
-                        <img src={IsMobileOrDesktop(anyleaseDesktop, anyleaseMobile)} alt="anylease" />
+        <div className=" anton flex flex-col items-center" id="projects" data-scroll-section>
+            <div className="w-full" >
+                <h2 className="w-3/4 mx-auto flex flex-col uppercase anton text-4xl mb-10" 
+                    data-scroll data-scroll-sticky data-scroll-repeat data-scroll-target="#projects" data-scroll-offset='-90, 120' >projects</h2>
+            </div>
+            <div className="anton container px-5 pb-10 mx-auto max-w-7x1 -m-4 ">
+                <main className="h-full 
+                scrollBarContainer animate">
+                    <section className="w-full h-screen text-gray-600 body-font " >
+                        <img 
+                        src={IsMobileOrDesktop(anyleaseDesktop, anyleaseMobile)} 
+                        alt="anylease" 
+                        className="w-screen h-full blur-comp "/>
                     </section>
-                    <section class="w-2/3 h-screen bg-red-200  ">
-                        Section 1
+                    <section className="w-full h-screen text-gray-600 body-font ">
+                        <img 
+                        src={IsMobileOrDesktop(landerdotDesktop, landerdotMobile)} 
+                        alt="landerdot" 
+                        className="w-screen h-full blur-comp "/>
                     </section>
                     <section class="w-full h-screen bg-blue-200  ">
                         Section 2
