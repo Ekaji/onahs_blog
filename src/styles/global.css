@@ -12,13 +12,9 @@
         position: absolute;
         background-color: transparent;
         width: 6px;
-        /* transition: 2s opacity ease;
-        -ms-transition: 2s opacity ease;
-        opacity: 0; */
     }
 
     .scrollBarContainer.animate::-webkit-scrollbar {
-        /* background-color: rgb(153, 153, 153); */
         transition: 2s opacity ease;
         -ms-transition: 2s opacity ease;
         opacity: 0;
@@ -38,6 +34,11 @@ body{
 
 .anton{
     font-family: 'Anton', sans-serif;
+}
+
+.img-blur{
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .blur-comp::before{

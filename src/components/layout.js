@@ -10,7 +10,7 @@ const Layout = ({children}) => {
         <>
         {/* <Menu /> */}
         <Locomotive>
-            <div className="w-full flex flex-col justify-center align-center" >
+            <div className="w-full flex flex-col justify-center align-center bg-trueGray-300" >
             { children }
             </div>
         </Locomotive>

@@ -15,30 +15,23 @@ const Projects = () => {
             </div>
             <div className="anton container px-5 pb-10 mx-auto max-w-7x1 -m-4 ">
                 <main className="h-full 
-                scrollBarContainer animate">
+                      scrollBarContainer animate space-y-8"
+                      >
                     <section className="w-full h-screen text-gray-600 body-font " >
                         <img 
                         src={IsMobileOrDesktop(anyleaseDesktop, anyleaseMobile)} 
                         alt="anylease" 
-                        className="w-screen h-full blur-comp "/>
+                        className="w-screen h-full " />
+                        {/* <div className='relative h-full img-blur inset-0'></div> */}
                     </section>
                     <section className="w-full h-screen text-gray-600 body-font ">
                         <img 
                         src={IsMobileOrDesktop(landerdotDesktop, landerdotMobile)} 
                         alt="landerdot" 
-                        className="w-screen h-full blur-comp "/>
+                        className="w-screen h-full "/>
                     </section>
-                    <section class="w-full h-screen bg-blue-200  ">
+                    <section className="w-full h-screen bg-blue-200 img-blur">
                         Section 2
-                    </section>
-                    <section class="w-full h-screen bg-green-200  ">
-                        Section 3
-                    </section>
-                    <section class="w-full h-screen bg-indigo-200  ">
-                        Section 4
-                    </section>
-                    <section class="w-full h-screen bg-yellow-200  " >
-                        Section 5
                     </section>
                 </main>  
             </div>
