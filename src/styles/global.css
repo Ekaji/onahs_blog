@@ -25,6 +25,10 @@
       border-radius: 20px;       /* roundness of the scroll thumb */
       border: rgb(153, 153, 153);  /* creates padding around scroll thumb */
     }
+
+    .vertical-lr {
+      writing-mode: vertical-lr;
+    }
    
 }
 
@@ -34,6 +38,15 @@ body{
 
 .anton{
     font-family: 'Anton', sans-serif;
+}
+
+.font-text{
+  font-size: 3vh;
+  font-size: clamp(1rem, 3vw, 4rem); 
+}
+
+.font-width{
+  font-size: clamp(8vw, 6vw, 9vw);
 }
 
 .img-blur{
