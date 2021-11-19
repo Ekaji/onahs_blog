@@ -1,21 +1,25 @@
 import React, { useState } from "react"
-import { IsMobileOrDesktop } from "../../hooks/deviceType/IsMobileOrDesktop"
+import { IsMenuOrNavbar } from "../../hooks/isNavBar/isNavBar"
 
 const Menu = () => {
     const [menuState, setMenuState] = useState(true)
     const handleClick = () => setMenuState(!menuState)
-    const deviceType = IsMobileOrDesktop('desktop', 'mobile')
+    const menuOrNavbar = IsMenuOrNavbar()
 
     return(
         <>
-        <div className={`blur-comp fixed right-0 w-screen anton z-20 
+        <div 
+        className={`blur-comp fixed right-0 w-screen anton z-20 
                         ${menuState ? ' transform transition-all ease-in duration-900 ' 
                         : 'transform transition-all ease-in duration-200 ' } 
                          `
                         } >
             <div className="flex justify-center items-center flex-col my-5 z-20" >
                 <div className="w-3/4 flex flex-col items-end md:flex-row md:justify-end">
-                    <div className="z-20 w-9 h-7 pointer overflow-hidden md:hidden" >
+                        
+                {menuOrNavbar === 'menu' ? 
+                <>
+                    <div className="z-20 w-9 h-7 pointer overflow-hidden " >
                         <ul className="anton" >
                             <li className={`transform transition-all ease-in duration-300 ${ menuState ? '-translate-y-7' : ''}`} onClick={handleClick}>
                                 <div className='text-stroke uppercase h-2/4 border-b-2 border-gray-900'> close </div>
@@ -25,9 +29,9 @@ const Menu = () => {
                             </li>
                         </ul>
                     </div>
-                    {deviceType === 'mobile' ? 
-                    //mobile
-                    <div className={`bg-clip-padding backdrop-filter backdrop-blur-xl absolute right-0 w-screen ${menuState ? 'transform transition-all ease-in duration-500 -translate-y-110' : 'transform transition-all ease-in duration-1000 translate-y-0' } md:translate-y-110`} >
+                    
+                    
+                    <div className={`bg-clip-padding backdrop-filter backdrop-blur-xl absolute right-0 w-screen ${menuState ? 'transform transition-all ease-in duration-500 -translate-y-110' : 'transform transition-all ease-in duration-1000 translate-y-0' } `} >
                         <div className='tracking-widest mx-auto pt-10 h-screen uppercase flex flex-col space-y-12 md:space-x-24 '>
                             <button ><a className='tracking-widest'  href="#home" data-scroll-to onClick={handleClick}>home</a> </button>
                             <button ><a className='tracking-widest' href="#about" data-scroll-to onClick={handleClick} >about</a> </button>
@@ -38,6 +42,7 @@ const Menu = () => {
                             </span>
                         </div>
                     </div>
+                    </>
                     : //desktop
                     <div className='tracking-widest md:flex md:space-x-24 md:uppercase'>
                         <button> <a className='tracking-widest' href="#home" data-scroll-to >home</a> </button>
@@ -50,6 +55,7 @@ const Menu = () => {
                     </div> 
                 }            
                 </div>
+                
             </div> 
         </div>
         </>

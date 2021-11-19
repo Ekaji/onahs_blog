@@ -3,7 +3,7 @@ import React from "react"
 const Contact = () => {
     return(
         <div className="w-3/4 mx-auto" data-scroll-section>
-            <h3>let's colaborate</h3>
+            <h3>let's collaborate</h3>
             <p>ekajionah@gmail.com</p>
 
             <div>

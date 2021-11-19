@@ -1,6 +1,4 @@
 import React from "react"
-import frontend from "../../images/frontend.gif"
-
 
 const About = () => {
     return(

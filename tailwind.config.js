@@ -14,7 +14,8 @@ module.exports = {
             height: {
                 '90vh': '90vh',
                 '80vh': '80vh',
-                '70vh': '70vh'
+                '70vh': '70vh',
+                'px-350': '350px'
             },
             spacing: {
                 '110': '110%'
