@@ -29,6 +29,14 @@
     .vertical-lr {
       writing-mode: vertical-lr;
     }
+
+    .bg-pastel-yellow {
+      background-color: #cebca9;
+    }
+
+    .max-mobile {
+      max-width: 370px;
+    }
    
 }
 
