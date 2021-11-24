@@ -2,12 +2,12 @@ import React from 'react'
 
 const Work = () => {
     return(
-        <div>
-            <div id='work-section-header'>
-                <div>work work work work work work work work</div>
+        <div className='' data-scroll-section>
+            <div id='work-section-header' >
+                {/* <div className='text-4xl' >work work work work work work work work</div> */}
                 <div></div>
             </div>
-            <div id='work' className='w-4/5 mx-auto mt-14 md:min-h-80vh border-t border-b-0 md:border-b border-gray-700 ' data-scroll-section>
+            <div id='work' className='w-4/5 mx-auto mt-14 md:min-h-80vh border-t border-b-0 md:border-b border-gray-700 ' >
                 <div className='md:w-3/4 md:h-80vh mx-auto flex flex-col md:flex-row md:border-l border-gray-700 ' >
                     
                     <div className='min-w-1/4 md:writing-mode-vertical cursor-pointer'>
