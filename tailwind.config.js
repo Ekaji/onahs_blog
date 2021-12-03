@@ -21,7 +21,9 @@ module.exports = {
                 '110': '110%'
             },
             colors: {
-                trueGray: colors.trueGray
+                trueGray: colors.trueGray,
+                emerald: colors.emerald,
+                rose: colors.rose
             }, }
     },
     variants: {

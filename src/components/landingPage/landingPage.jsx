@@ -39,7 +39,11 @@ const LandingPage = () => {
 
 
     return(
-        <div className="flex justify-center pt-10 h-screen md:my-auto w-full bg-gradient-to-tr from-purple-300 via-indigo-300 to-pink-400" id='home' data-scroll-section>
+        <div className='flex justify-center pt-10 h-screen md:my-auto w-full 
+            .bg-gradient-to-tr .from-purple-300 .via-indigo-300 .to-pink-400
+            bg-rose-400
+            ' 
+            id='home' data-scroll-section>
             <div className="flex flex-col items-center mt-8 md:my-auto">
                 <div className="w-3/4 anton md:h-5/6">
                     <div className="text-3xl"> {(Object.values(greeting))}</div>
