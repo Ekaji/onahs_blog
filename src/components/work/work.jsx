@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from '../modal/modal'
+import { projects } from '../../data/data'
+
 
 const Work = () => {
+
+
+    const [isModalVisible, setModalVisibility] = useState(false);
+    const [modalDetails, setModalDetails] = useState({})
+
+    const handleModalVisibility = (name, description, image) => {
+        setModalVisibility(!isModalVisible)
+        setModalDetails({name: name, description : description, image: image, })
+    }
+
+
+
     return(
         <div className='mb-20' data-scroll-section>
-            <div id='work-section-header' className='w-4/5 mx-auto uppercase' >
-                {/* <div className='text-4xl' >work work work work work work work work</div> */}
+            {isModalVisible ? <Modal isModalVisible={isModalVisible} modalDetails={modalDetails} />  : <></>}
+            <div id='work-section-header' className=' w-4/5 mx-auto uppercase' >
 
                 <h3 className='text-2xl anton text-trueGray-700'>
                     selected work
@@ -13,21 +28,15 @@ const Work = () => {
             <div id='work' className='w-4/5 mx-auto mt-8 border-t border-gray-700 ' >
                 <div className=' mx-auto flex flex-col md:flex-row  border-gray-700 ' > 
                     <div className='w-full cursor-pointer'>
-                        <div className='capitalize border-b  border-gray-700 text-2xl md:text-lg'>
-                           <p className='py-2 md:px-4 anton'> landerdot </p>
-                        </div>
-                        <div className='capitalize border-b  border-gray-700 text-2xl md:text-lg'>
-                            <p className='py-2 md:px-4 anton'>anylease</p>
-                        </div>
-                        <div className='capitalize border-b  border-gray-700 text-2xl md:text-lg'>
-                            <p className='py-2 md:px-4 anton'>employee management portal</p>
-                        </div>
-                        <div className='capitalize border-b  border-gray-700 text-2xl md:text-lg'>
-                            <p className='py-2 md:px-4 anton'>dragnote</p>
-                        </div>
-                        <div className='capitalize border-b border-gray-700 text-2xl md:text-lg'>
-                            <p className='py-2 md:px-4 anton'>bookmark landing</p>
-                        </div>
+                        {projects.map(( { name, description, image}, i ) => ( 
+                        <div key={name} className='capitalize border-b  border-gray-700 text-lg'>
+                            <div className=' py-6 md:px-4 anton'>
+                                <span className='flex' onClick={ () => handleModalVisibility( name, description, image)} >
+                                    <span className='p-6 h-6 w-6 mr-6 flex items-center justify-center rounded-full bg-trueGray-700 text-white '>{i + 1}</span>
+                                    <span className='my-auto' >{name}</span>  
+                                </span>
+                            </div>
+                        </div>))}
                     </div>
                 </div>
             </div>

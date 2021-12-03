@@ -2,7 +2,7 @@ import React from "react"
 
 const About = () => {
 
-    const stacks = ['html', 'css', 'javascript', 'nodejs', 'react', 'react native', 'mongoDb', 'express', 'jquery']
+    const stacks = ['html', 'css', 'javascript', 'nodejs', 'react', 'react native', 'mongoDb', 'express', 'jquery', 'tailwind']
 
     return(
         <div>

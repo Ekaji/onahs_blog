@@ -10,7 +10,7 @@ const LandingPage = () => {
             English: 'Hello'
         },
         {
-            Yoruba: 'Bao ni'
+            Yoruba: 'Bawo ni'
         },
         {
             Igbo: 'Kedu'
