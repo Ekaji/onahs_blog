@@ -36,7 +36,7 @@ const stacks = [
                     <div className='pt-4'>
                         {stacks.map((stack, i) => (
                         <div key={i} 
-                             className='border rounded-3xl border-purple-700 bg-purple-300 px-6 py-1 text-base md:text-lg 
+                             className='border rounded-3xl border-purple-700 .bg-purple-300 px-6 py-1 text-base md:text-lg 
                                         anton tracking-wide my-1 mr-1 inline-block '>
                             {stack}
                         </div>) 
