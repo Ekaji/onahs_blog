@@ -9,7 +9,7 @@ const Menu = () => {
     return(
         <>
             <div 
-            className={` .blur-comp fixed right-0 w-screen anton z-20 
+            className={` blur-comp fixed right-0 w-screen anton z-20 
                             ${menuState ? ' transform transition-all ease-in duration-900 ' 
                             : 'transform transition-all ease-in duration-200 ' } 
                             `

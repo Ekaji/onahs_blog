@@ -9,7 +9,8 @@ module.exports = {
         extend: {
             zIndex: {
                 '200': '-200',
-                '-20': '-20'
+                '-20': '-20',
+                'closest': '1000'
             },
             height: {
                 '90vh': '90vh',
