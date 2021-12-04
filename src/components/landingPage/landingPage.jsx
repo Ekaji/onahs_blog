@@ -41,7 +41,8 @@ const LandingPage = () => {
     return(
         <div className='flex justify-center pt-10 h-screen md:my-auto w-full 
             .bg-gradient-to-tr .from-purple-300 .via-indigo-300 .to-pink-400
-            bg-rose-400
+            .bg-red-300 
+            bg-purple-700 text-purple-200
             ' 
             id='home' data-scroll-section>
             <div className="flex flex-col items-center mt-8 md:my-auto">

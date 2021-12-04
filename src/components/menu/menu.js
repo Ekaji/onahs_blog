@@ -9,7 +9,7 @@ const Menu = () => {
     return(
         <>
             <div 
-            className={`blur-comp fixed right-0 w-screen anton z-20 
+            className={` .blur-comp fixed right-0 w-screen anton z-20 
                             ${menuState ? ' transform transition-all ease-in duration-900 ' 
                             : 'transform transition-all ease-in duration-200 ' } 
                             `
@@ -22,10 +22,10 @@ const Menu = () => {
                             <div className="z-20 w-9 h-7 pointer overflow-hidden " >
                                 <ul className="anton" >
                                     <li className={`transform transition-all ease-in duration-300 ${ menuState ? '-translate-y-7' : ''}`} onClick={handleClick}>
-                                        <div className='text-stroke uppercase h-2/4 border-b-2 border-gray-900'> close </div>
+                                        <div className='  uppercase h-2/4 border-b-2 border-gray-900 mix-blend-difference text-black'> close </div>
                                     </li>
                                     <li className={`transform transition-all ease-in duration-300 ${ menuState ? '-translate-y-7' : ''}`} onClick={handleClick}>
-                                        <div className='text-stroke uppercase h-2/4 border-b-2 border-gray-900'> menu </div>
+                                        <div className='  uppercase h-2/4 border-b-2 border-gray-900 mix-blend-difference text-black '> menu </div>
                                     </li>
                                 </ul>
                             </div>
@@ -36,8 +36,8 @@ const Menu = () => {
                                     <button ><a className='tracking-widest capitalize' href="#about" data-scroll-to onClick={handleClick} >about</a> </button>
                                     <button ><a className='tracking-widest capitalize'  href="#projects" data-scroll-to onClick={handleClick} >projects</a> </button>
                                     <span className='mx-auto space-y-4 md:space-x-12'>
-                                        <button className='tracking-widest block border-gray-900 border rounded-full w-40 py-2 hover:bg-gray-900 hover:text-white capitalize'><a href="/blog" >blog</a> </button>
-                                        <button className='tracking-widest block bg-gray-900 rounded-full w-40 py-2 text-white hover:bg-white hover:text-gray-900 capitalize border hover:border-gray-900'><a href="#">contact</a> </button>
+                                        <button className='tracking-widest block border-purple-700 border rounded-full w-40 py-2 hover:bg-purple-700 hover:text-white capitalize'><a href="/blog" >blog</a> </button>
+                                        <button className='tracking-widest block bg-purple-700 rounded-full w-40 py-2 text-white hover:bg-white hover:text-purple-900 capitalize hover:border hover:border-purple-700'><a href="#">contact</a> </button>
                                     </span>
                                 </div>
                             </div>

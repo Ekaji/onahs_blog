@@ -23,16 +23,19 @@ module.exports = {
             colors: {
                 trueGray: colors.trueGray,
                 emerald: colors.emerald,
-                rose: colors.rose
-            }, }
+                rose: colors.rose,
+                coolGray: colors.coolGray
+            }
+        }
     },
     variants: {
         extend: {}
     },
     plugins: [
-        require('@tailwindcss/line-clamp'),
-        require('tailwindcss-writing-mode')({
-            variants: ['responsive', 'hover']
-        })
-    ],
- }
+        require('@tailwindcss/line-clamp'), require('tailwindcss-writing-mode')(
+            {
+                variants: ['responsive', 'hover']
+            }
+        )
+    ]
+}
