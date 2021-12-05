@@ -15,7 +15,7 @@ import React, { useState} from 'react'
                 </svg>
           </button>
         </div>
-        <div className="w-10/12 m-auto z-50 p-4">  
+        <div className="w-11/12 md:w-10/12 m-auto z-50 p-4">  
             <div className="-white shadow-md border border-gray-200 rounded-lg m-auto max-w-sm md:min-w-full md:flex ">
             <img className="rounded-t-lg md:w-4/6" src={modalDetails.image} alt="" />
             <div className="p-5 ">
