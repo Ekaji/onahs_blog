@@ -10,7 +10,7 @@ module.exports = {
             zIndex: {
                 '200': '-200',
                 '-20': '-20',
-                'closest': '1000'
+                'closest': '9999'
             },
             height: {
                 '90vh': '90vh',

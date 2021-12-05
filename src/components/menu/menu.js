@@ -48,8 +48,8 @@ const Menu = () => {
                             <button> <a className='tracking-widest capitalize' href="#about" data-scroll-to >about</a> </button>
                             <button><a className='tracking-widest capitalize' href="#projects" data-scroll-to >projects</a> </button>
                             <span className='space-x-12'>
-                                <button className='tracking-widest border-emerald-700 border rounded-full w-24 py-2 hover:bg-gray-900 hover:text-white capitalize'><a href="/blog"  >blog</a> </button>
-                                <button className='tracking-widest bg-emerald-700 rounded-full w-24 py-2 text-white hover:bg-emerald-700 hover:text-gray-900  capitalize'><a href="#">contact</a> </button>
+                                <button className='tracking-widest border-purple-700 border rounded-full w-24 py-2 hover:bg-gray-900 hover:text-white capitalize'><a href="/blog"  >blog</a> </button>
+                                <button className='tracking-widest bg-purple-700 rounded-full w-24 py-2 text-white hover:bg-purple-700 hover:text-gray-900 capitalize'><a href="#">contact</a> </button>
                             </span>
                         </div> 
                     }            

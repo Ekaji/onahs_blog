@@ -6,11 +6,11 @@ import Locomotive from './scroll/Locomotive'
 const Layout = ({children}) => {
 
     return(
-        <Locomotive>
+        // <Locomotive>
             <div className="w-full flex flex-col justify-center align-center .bg-purple-300 z-50 overflow-hidden" >
             { children }
             </div>
-        </Locomotive>
+        // </Locomotive>
     )
 }
 

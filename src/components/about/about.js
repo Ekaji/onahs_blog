@@ -20,7 +20,7 @@ const stacks = [
     return(
         <div>
             <div id="about" className='
-             mt-14 w-4/5 mx-auto md:flex mb-20 ' data-scroll-section >
+             mt-14 w-4/5 mx-auto md:flex mb-20 ' data-scroll-section- >
                 <div className='md:w-2/4'>
                     <h3 className='text-2xl md:text-2xl  ml-2 tracking-tight anton uppercase text-purple-700' >who am i</h3>
                     <p className='max-mobile md:min-w-full text-base md:text-lg ml-2 tracking-wide anton pt-4 ' 
@@ -30,7 +30,7 @@ const stacks = [
                     </p>
                 </div>
             </div>
-            <div id='stack' className=' w-full mb-20' data-scroll-section>
+            <div id='stack' className=' w-full mb-20' data-scroll-section->
                 <div className='w-4/5 mx-auto'>
                     <h3 className='text-2xl anton uppercase text-purple-700'>my stack</h3>
                     <div className='pt-4'>

@@ -17,8 +17,8 @@ const Work = () => {
 
 
     return(
-        <div className='mb-20' data-scroll-section>
-            {isModalVisible ? <Modal isModalVisible={isModalVisible} modalDetails={modalDetails} />  : <></>}
+        <div className='mb-20' data-scroll-section->
+            {isModalVisible ? <Modal setModalVisibility={setModalVisibility} modalDetails={modalDetails} />  : <></>}
             <div id='work-section-header' className=' w-4/5 mx-auto uppercase' >
 
                 <h3 className='text-2xl anton text-purple-700'>
