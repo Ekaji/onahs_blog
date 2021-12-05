@@ -29,9 +29,10 @@ const Work = () => {
                 <div className=' mx-auto flex flex-col md:flex-row  border-purple-700 ' > 
                     <div className='w-full cursor-pointer'>
                         {projects.map(( { name, description, image}, i ) => ( 
-                        <div key={name} className='capitalize border-b border-purple-700 text-lg'>
+                        <div key={name} className='capitalize border-b border-purple-700 text-lg'
+                             onClick={ () => handleModalVisibility( name, description, image)}>
                             <div className=' py-6 md:px-4 anton'>
-                                <span className='flex' onClick={ () => handleModalVisibility( name, description, image)} >
+                                <span className='flex'  >
                                     <span className='p-6 h-6 w-6 mr-6 flex items-center justify-center rounded-full border border-purple-700 '>{i + 1}</span>
                                     <span className='my-auto' >{name}</span>  
                                 </span>
