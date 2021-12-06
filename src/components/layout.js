@@ -7,7 +7,7 @@ const Layout = ({children}) => {
 
     return(
         // <Locomotive>
-            <div className="w-full flex flex-col justify-center align-center .bg-purple-300 z-50 overflow-hidden" >
+            <div className="w-full flex flex-col justify-center align-center bg-gray-200 z-50 overflow-hidden" >
             { children }
             </div>
         // </Locomotive>
