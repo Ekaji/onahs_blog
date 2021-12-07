@@ -38,9 +38,9 @@ const Contact = () => {
 
             console.log(userId)
 
-            // emailjs.send(serviceId, templateId, templateParams, userId)
-            //     .then(response => console.log(response))
-            //     .then(error => console.log(error));
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                 .then(response => console.log(response))
+                 .then(error => console.log(error));
 
 
             setMailStatusMessage('email sent');
