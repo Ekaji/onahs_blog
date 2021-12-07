@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 import contactus from '../../images/contactus.gif';
+import MailStatusModal from '../../components/mailPopUp/mailStatusModal';
 
 const Contact = () => {
 
@@ -8,7 +9,9 @@ const Contact = () => {
     const [ company, setCompanyName ] = useState('');
     const [ email, setEmail ] = useState('');
     const [ message, setMessage ] = useState('');
-    const [ emailSent, setEmailSent ] = useState(false);
+
+    const [ mailStatusMessage, setMailStatusMessage ] = useState('');
+    const [mailPopUp, setMailPopUp] = useState(false)
 
     
 
@@ -35,22 +38,28 @@ const Contact = () => {
 
             console.log(userId)
 
-            emailjs.send(serviceId, templateId, templateParams, userId)
-                .then(response => console.log(response))
-                .then(error => console.log(error));
+            // emailjs.send(serviceId, templateId, templateParams, userId)
+            //     .then(response => console.log(response))
+            //     .then(error => console.log(error));
 
 
+            setMailStatusMessage('email sent');
+            setMailPopUp(true);
             setName('');
             setCompanyName('');
             setEmail('');
             setMessage('');
         } else {
-            alert('please fill in all the fields')
+            setMailStatusMessage('an error occurred, please try after sometime');
         }
     }
 
+    console.log(mailStatusMessage)
+
     return(
     <div className="text-gray-100" data-scroll-section- >
+        { mailPopUp ? <MailStatusModal mailStatusMessage={ mailStatusMessage } setMailPopUp={setMailPopUp} /> : <></>}
+
         <div className=".max-w-screen-xl w-4/5 mt-4 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-white text-gray-900 rounded-lg shadow-lg" data-scroll-section>
 
             <div className="flex flex-col justify-between">
