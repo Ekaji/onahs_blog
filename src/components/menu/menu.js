@@ -9,7 +9,7 @@ const Menu = () => {
     return(
         <>
             <div 
-            className={` blur-comp fixed right-0 w-screen anton z-20 
+            className={` blur-comp fixed right-0 w-screen .anton z-20 
                             ${menuState ? ' transform transition-all ease-in duration-900 ' 
                             : 'transform transition-all ease-in duration-200 ' } 
                             `
@@ -22,10 +22,10 @@ const Menu = () => {
                             <div className="z-20 w-9 h-7 pointer overflow-hidden " >
                                 <ul className="anton" >
                                     <li className={`transform transition-all ease-in duration-300 ${ menuState ? '-translate-y-7' : ''}`} onClick={handleClick}>
-                                        <div className='  uppercase h-2/4 border-b-2 border-gray-900 mix-blend-difference text-black'> close </div>
+                                        <div className='uppercase h-2/4 border-b-2 border-gray-900 mix-blend-difference text-black'> close </div>
                                     </li>
                                     <li className={`transform transition-all ease-in duration-300 ${ menuState ? '-translate-y-7' : ''}`} onClick={handleClick}>
-                                        <div className='  uppercase h-2/4 border-b-2 border-gray-900 mix-blend-difference text-black '> menu </div>
+                                        <div className='uppercase h-2/4 border-b-2 border-gray-900 mix-blend-difference text-black '> menu </div>
                                     </li>
                                 </ul>
                             </div>

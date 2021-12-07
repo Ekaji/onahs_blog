@@ -5,6 +5,7 @@ import LatestPosts from "../components/latestPosts/latestPosts"
 import About from "../components/about/about"
 import Contact from "../components/contact/contact"
 import Work from "../components/work/work"
+import Footer from "../components/footer/footer"
 
 const Home = () => {
   return(
@@ -14,6 +15,7 @@ const Home = () => {
       <Work />
       <LatestPosts />
       <Contact />
+      <Footer />
     </Layout>
   )
 }

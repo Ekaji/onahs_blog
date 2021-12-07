@@ -58,7 +58,7 @@ const Contact = () => {
     <div className="text-gray-100" data-scroll-section- >
         { mailPopUp ? <MailStatusModal mailStatusMessage={ mailStatusMessage } setMailPopUp={setMailPopUp} /> : <></>}
 
-        <div className=".max-w-screen-xl w-4/5 mt-4 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-white text-gray-900 rounded-lg shadow-lg" data-scroll-section>
+        <div className=" w-4/5 mt-4 mb-8 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16  mx-auto bg-white text-gray-900 rounded-lg shadow-lg" data-scroll-section>
 
             <div className="flex flex-col justify-between">
                 <div>
