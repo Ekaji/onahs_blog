@@ -36,8 +36,8 @@ const Menu = () => {
                                     <button ><a className='tracking-widest capitalize' href="#about" data-scroll-to onClick={handleClick} >about</a> </button>
                                     <button ><a className='tracking-widest capitalize'  href="#projects" data-scroll-to onClick={handleClick} >projects</a> </button>
                                     <span className='mx-auto space-y-4 md:space-x-12'>
-                                        <button className='tracking-widest block border-purple-700 border rounded-full w-40 py-2 hover:bg-purple-700 hover:text-white capitalize'><a href="/blog" >blog</a> </button>
-                                        <button className='tracking-widest block bg-purple-700 rounded-full w-40 py-2 text-white hover:bg-white hover:text-purple-900 capitalize hover:border hover:border-purple-700'><a href="#">contact</a> </button>
+                                        <button className='tracking-widest block border-indigo-700 border rounded-full w-40 py-2 hover:bg-indigo-700 hover:text-white capitalize'><a href="/blog" >blog</a> </button>
+                                        <button className='tracking-widest block bg-indigo-700 rounded-full w-40 py-2 text-white hover:bg-white hover:text-indigo-900 capitalize hover:border hover:border-indigo-700'><a href="#">contact</a> </button>
                                     </span>
                                 </div>
                             </div>
@@ -48,8 +48,8 @@ const Menu = () => {
                             <button> <a className='tracking-widest capitalize' href="#about" data-scroll-to >about</a> </button>
                             <button><a className='tracking-widest capitalize' href="#projects" data-scroll-to >projects</a> </button>
                             <span className='space-x-12'>
-                                <button className='tracking-widest border-purple-700 border rounded-full w-24 py-2 hover:bg-gray-900 hover:text-white capitalize'><a href="/blog"  >blog</a> </button>
-                                <button className='tracking-widest bg-purple-700 rounded-full w-24 py-2 text-white hover:bg-purple-700 hover:text-gray-900 capitalize'><a href="#">contact</a> </button>
+                                <button className='tracking-widest border-indigo-700 border rounded-full w-24 py-2 hover:bg-gray-900 hover:text-white capitalize'><a href="/blog"  >blog</a> </button>
+                                <button className='tracking-widest bg-indigo-700 rounded-full w-24 py-2 text-white hover:bg-indigo-700 hover:text-gray-900 capitalize'><a href="#">contact</a> </button>
                             </span>
                         </div> 
                     }            
