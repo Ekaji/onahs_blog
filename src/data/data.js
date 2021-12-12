@@ -2,6 +2,7 @@ import anyleaseDesktop from '../../src/images/desktop/anyleaseDesktop.png'
 import landadotDesktop from '../../src/images/desktop/landerdotDesktop.png'
 import bookmarkDesktop from '../../src/images/desktop/bookmarkDesktop.png'
 import empDesktop from '../../src/images/desktop/empDesktop.png'
+import dragnote from '../../src/images/desktop/dragnote.png'
 
 
 export const projects = [
@@ -33,8 +34,8 @@ export const projects = [
         name: 'dragnote',
         description: 'simple app for taking notes built using react native',
         link: '',
-        image: '',
-        repo: '',
+        image: dragnote,
+        repo: 'https://github.com/Ekaji/dragonnote',
         stack: ''
     }, {
         name: 'bookmark landing page',
