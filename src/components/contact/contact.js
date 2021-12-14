@@ -52,7 +52,6 @@ const Contact = () => {
         }
     }
 
-    console.log(mailStatusMessage)
 
     return(
     <div className="text-gray-100" data-scroll-section- >
