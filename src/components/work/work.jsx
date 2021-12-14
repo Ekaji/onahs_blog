@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, createRef } from 'react'
 import Modal from '../modal/modal'
 import { projects } from '../../data/data'
-// import ScrollReveal from 'scrollreveal'
+import ScrollReveal from 'scrollreveal'
 
 
 const Work = () => {
@@ -19,15 +19,12 @@ const Work = () => {
 
     
     useEffect(() => {
-        if (typeof window !== `undefined`) {
-            const ScrollReveal = require("scrollreveal")
-            ScrollReveal({ reset: true })
-            .reveal(scrollRef.current, {
-                delay: 800,
-                duration: 1000,
-                reset: true
-            })
-          }
+        ScrollReveal({ reset: true })
+        .reveal(scrollRef.current, {
+            delay: 800,
+            duration: 1000,
+            reset: true
+        })
     },[])
     
 
