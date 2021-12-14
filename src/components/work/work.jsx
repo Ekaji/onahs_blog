@@ -29,7 +29,7 @@ const Work = () => {
     
 
     return(
-        <div className='mb-20' data-scroll-section- >
+        <div id="projects" className='mb-20' data-scroll-section >
             {isModalVisible ? <Modal setModalVisibility={setModalVisibility} modalDetails={modalDetails} />  : <></>}
             <div id='work-section-header' className=' w-4/5 mx-auto .uppercase' >
 

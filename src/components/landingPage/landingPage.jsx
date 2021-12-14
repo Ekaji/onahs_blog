@@ -44,7 +44,7 @@ const LandingPage = () => {
             .bg-red-300 
             text-indigo-700
             ' 
-            id='home' data-scroll-section- >
+            id='home' data-scroll-section >
             <div className="flex flex-col items-center mt-8 md:my-auto">
                 <div className="w-3/4 anton md:h-5/6">
                     <div className="text-3xl"> {(Object.values(greeting))}</div>
