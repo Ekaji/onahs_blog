@@ -5,7 +5,7 @@ const Footer = () => {
     return(
         <div className='w-screen flex justify-center' data-scroll-section>
             <div className =' p-4'>
-                © copyright 2021
+                © copyright 2022
             </div>
         </div>
     )
