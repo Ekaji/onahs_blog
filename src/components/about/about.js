@@ -22,7 +22,7 @@ const stacks = [
             <div id="about" className='
              mt-14 w-4/5 mx-auto md:flex mb-20 ' data-scroll-section >
                 <div className='md:w-2/4'>
-                    <h3 className='text-2xl  ml-2 tracking-tight .anton .uppercase text-indigo-700' >Who am i</h3>
+                    <h3 className='text-2xl  ml-2 tracking-tight .anton .uppercase text-indigo-700' >Who am i?</h3>
                     <p className='max-mobile md:min-w-full text-base md:text-lg ml-2 tracking-wide .anton pt-4 ' 
                     // data-scroll data-scroll-speed='4'
                     >

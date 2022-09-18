@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, createRef } from 'react'
 import Modal from '../modal/modal'
 import { projects } from '../../data/data'
-import ScrollReveal from 'scrollreveal'
+// import ScrollReveal from 'scrollreveal'
 
 
 const Work = () => {
@@ -15,17 +15,17 @@ const Work = () => {
         setModalDetails({ name: name, description : description, image: image, link: link })
     }
 
-    const scrollRef = useRef([])
+    // const scrollRef = useRef([])
 
     
-    useEffect(() => {
-        ScrollReveal({ reset: true })
-        .reveal(scrollRef.current, {
-            delay: 800,
-            duration: 1000,
-            reset: true
-        })
-    },[])
+    // useEffect(() => {
+    //     ScrollReveal({ reset: true })
+    //     .reveal(scrollRef.current, {
+    //         delay: 800,
+    //         duration: 1000,
+    //         reset: true
+    //     })
+    // },[])
     
 
     return(
@@ -40,18 +40,22 @@ const Work = () => {
             <div id='work' className='w-4/5 mx-auto mt-8 border-t border-indigo-700 ' >
                 <div className=' mx-auto flex flex-col md:flex-row  border-indigo-700 ' > 
                     <div className='w-full cursor-pointer' >
-                        {projects.map(( { name, description, image, link }, i ) => ( 
+                        {projects.map(( { name, description, image, link, status }, i ) => ( 
                         <div key={name} 
-                            ref={(element) => { 
-                                scrollRef.current[i] = element
-                                return element
-                            } }
+                            // ref={(element) => { 
+                            //     scrollRef.current[i] = element
+                            //     return element
+                            // } }
                             className='capitalize border-b border-indigo-700 text-lg'
                             onClick={ () => handleModalVisibility( name, description, image, link)}>
                             <div className=' py-6 md:px-4' >
                                 <span className='flex'  >
                                     <span className='p-6 h-6 w-6 mr-6 flex items-center justify-center rounded-full border border-indigo-700 '>{i + 1}</span>
                                     <span className='my-auto ' >{name}</span>  
+                                    {
+                                        status == 'ongoing' && (<span className='border rounded-3xl border-indigo-700 .bg-indigo-300 px-6 py-1 text-base md:text-lg 
+                                        .anton tracking-wide my-1 mr-1 inline-block ml-4'>{status}</span>)
+                                    }
                                 </span>
                             </div>
                         </div>))}

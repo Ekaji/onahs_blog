@@ -1,7 +1,6 @@
 import React from 'react'
 
  const Modal = ({ modalDetails, setModalVisibility}) => {
-   console.log(modalDetails)
 
     return(
       <>
