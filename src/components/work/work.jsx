@@ -54,7 +54,7 @@ const Work = () => {
                                     <span className='my-auto ' >{name}</span>  
                                     {
                                         status == 'ongoing' && (<span className='border rounded-3xl border-indigo-700 .bg-indigo-300 px-6 py-1 text-base md:text-lg 
-                                        .anton tracking-wide my-1 mr-1 inline-block ml-4'>{status}</span>)
+                                        .anton tracking-wide my-1 mr-1 inline ml-4'>{status}</span>)
                                     }
                                 </span>
                             </div>
