@@ -17,7 +17,7 @@ import React from 'react'
         </div>
         <div className=".w-11/12 md:w-10/12 m-auto z-50 .p-4">  
             <div className="-white shadow-md border border-gray-200 rounded-lg m-auto max-w-sm md:min-w-full md:flex ">
-            <img className=`rounded-t-lg md:w-3/4 ${modalDetails.image.includes('purple') ? 'h-300px' : 'max-h-70vh md:h-full'}` src={modalDetails.image} alt="" />
+            <img className='rounded-t-lg md:w-3/4 max-h-70vh md:h-[400px] ' src={modalDetails.image} alt="" />
             <div className="p-5 ">
              <h5 className="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">{modalDetails.name}</h5>
              <p className="h-4/6 font-normal text-gray-700 mb-3 dark:text-gray-400">{modalDetails.description}</p>
