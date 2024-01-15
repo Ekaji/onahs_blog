@@ -48,7 +48,7 @@ export const projects = [
         name: 'Purple pages (Mobile App)',
         description: 'Helping customers find the best Businesses',
         link: '',
-        image: usepurplepages,
+        image: '',
         repo: '',
         stack: ['react native', 'firebase'],
         status: 'Comming Soon'
