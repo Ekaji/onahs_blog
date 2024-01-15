@@ -4,6 +4,7 @@ import bookmarkDesktop from '../../src/images/desktop/bookmarkDesktop.png'
 import empDesktop from '../../src/images/desktop/empDesktop.png'
 import dragnote from '../../src/images/desktop/dragnote.png'
 import tacafrica from '../../src/images/desktop/tacafrica.png'
+import usepurplepages from '../../src/images/desktop/usepurplepages.png'
 import SOHK from '../../src/images/desktop/SOHK.png'
 
 
@@ -43,14 +44,15 @@ export const projects = [
         stack: ['html', 'css', 'javascript'],
         status: ''
     },
-    // {
-    //     name: 'employee management portal',
-    //     description: '',
-    //     link: 'https://eka-management-app.herokuapp.com/',
-    //     image: empDesktop,
-    //     repo: '',
-    //     stack: ''
-    // },
+    {
+        name: 'Purple pages (Mobile App)',
+        description: 'Helping customers find the best Businesses',
+        link: '',
+        image: usepurplepages,
+        repo: '',
+        stack: ['react native', 'firebase'],
+        status: 'Comming Soon'
+    },
     {
         name: 'mrtidynigeria.',
         description: 'website for a Nigerian based waste management',
