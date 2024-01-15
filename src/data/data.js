@@ -24,7 +24,6 @@ export const projects = [
         image: SOHK,
         repo: '',
         stack: ['nextjs', 'tailwindcss'],
-        status: 'ongoing'
     },
     {
         name: 'landadot',
@@ -52,14 +51,14 @@ export const projects = [
     //     repo: '',
     //     stack: ''
     // },
-    // {
-    //     name: 'dragnote',
-    //     description: 'simple app for taking notes built using react native',
-    //     link: '',
-    //     image: dragnote,
-    //     repo: 'https://github.com/Ekaji/dragonnote',
-    //     stack: ''
-    // }, 
+    {
+        name: 'mrtidynigeria.',
+        description: 'website for a Nigerian based waste management',
+        link: 'https://mrtidynigeria.com/',
+        image: 'https://mrtidynigeria.com/Mr%20Tidy%20SM%20Post%201a.jpg',
+        repo: 'https://github.com/Ekaji/dragonnote',
+        stack: ['react', 'tailwindcss'],
+    }, 
     {
         name: 'bookmark landing page',
         description: 'landing page for a bookmark manager, it is one of the challenges that can be found on frontend mentors',
