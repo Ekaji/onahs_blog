@@ -21,7 +21,7 @@ const LandingPage = () => {
         }
     ];
 
-    const [greeting, setGreeting] = useState((Object.values(helloArray[0])))
+    const [greeting, setGreeting] = useState<unknown>((Object.values(helloArray[0])))
 
     useEffect(() => {
         let i = 0;
@@ -34,7 +34,7 @@ const LandingPage = () => {
             }, 4000);
         };
         updateGreeting()
-        return() => clearTimeout(updateGreeting);
+        return() => clearTimeout(updateGreeting as unknown as number);
     }, [])
 
 
@@ -47,8 +47,8 @@ const LandingPage = () => {
             id='home' data-scroll-section >
             <div className="flex flex-col items-center mt-8 md:my-auto">
                 <div className="w-3/4 anton md:h-5/6">
-                    <div className="text-3xl"> {(Object.values(greeting))}</div>
-                    <div className="text-6xl uppercase"> i'm 
+                    <div className="text-3xl"> {(Object.values(greeting as string))}</div>
+                    <div className="text-6xl uppercase"> im 
                         <span className=""> ekaji onah,
                         </span> CREATIVE WEB DEVELOPER BASED IN ABUJA, NIGERIA. 
                     </div> 

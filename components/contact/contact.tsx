@@ -11,7 +11,8 @@ const Contact = () => {
     const [ email, setEmail ] = useState('');
     const [ message, setMessage ] = useState('');
 
-    const [ mailStatusMessage, setMailStatusMessage ] = useState('');
+    const mailStatusMessage = '';
+    // const [ mailStatusMessage, setMailStatusMessage ] = useState('');
     const [mailPopUp, setMailPopUp] = useState(false)
 
     
@@ -92,11 +93,12 @@ const Contact = () => {
                 <div className="mt-8">
                     <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
                     <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
-                              value={message} onChange={e => setMessage(e.target.value)}  type="text" placeholder="" />
+                              value={message} onChange={e => setMessage(e.target.value)}   placeholder="" />
                 </div>
                 <div className="mt-8">
                     <button className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline" 
-                            onClick={e => submit(e)} >
+                            // onClick={e => submit(e)}
+                             >
                         Send Message
                     </button>
                 </div>
