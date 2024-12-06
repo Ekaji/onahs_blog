@@ -8,6 +8,7 @@ import Contact from "../components/contact/contact"
 import Work from "../components/work/work"
 import Footer from "../components/footer/footer"
 
+
 export default async function Index() {
   return(
     <>
