@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+@layer utilities{
+    .card-shadow{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .scrollBarContainer::-webkit-scrollbar {
+        position: absolute;
+        background-color: transparent;
+        width: 6px;
+    }
+
+    .scrollBarContainer.animate::-webkit-scrollbar {
+        transition: 2s opacity ease;
+        -ms-transition: 2s opacity ease;
+        opacity: 0;
+    }
+
+    .scrollBarContainer.animate::-webkit-scrollbar-thumb {
+      background-color: rgb(153, 153, 153);    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: rgb(153, 153, 153);  /* creates padding around scroll thumb */
+    }
+
+    .max-mobile {
+      max-width: 370px;
+    }
+   
+}
+
+body {
+  /* color: var(--foreground); */
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.anton{
+    font-family: 'Anton', sans-serif;
+}
+.img-blur{
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.blur-comp::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
